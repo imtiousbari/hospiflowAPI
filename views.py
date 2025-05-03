@@ -15,8 +15,15 @@ class DoctorViewSet(viewsets.ModelViewSet):
     serializer_class = DoctorSerializer
 
 class PatientViewSet(viewsets.ModelViewSet):
-    queryset = Patient.objects.all()
-    serializer_class = PatientSerializer
+    queryset = Patient.objects.all()
+    serializer_class = PatientSerializer
+
+    @action(detail=True, methods=['post'])
+    def discharge(self, request, pk=None):
+        patient = self.get_object()
+        patient.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
 
 class TreatmentViewSet(viewsets.ModelViewSet):
     queryset = Treatment.objects.all()
