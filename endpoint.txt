@@ -1,0 +1,51 @@
+GET /wards/ - List all wards
+
+POST /wards/ - Create a new ward
+
+GET /wards/{id}/ - Retrieve a specific ward
+
+PUT /wards/{id}/ - Update a specific ward
+
+DELETE /wards/{id}/ - Delete a specific ward
+
+GET /teams/ - List all teams
+
+POST /teams/ - Create a new team
+
+GET /teams/{id}/ - Retrieve a specific team
+
+PUT /teams/{id}/ - Update a specific team
+
+DELETE /teams/{id}/ - Delete a specific team
+
+GET /doctors/ - List all doctors
+
+POST /doctors/ - Create a new doctor
+
+GET /doctors/{id}/ - Retrieve a specific doctor
+
+PUT /doctors/{id}/ - Update a specific doctor
+
+DELETE /doctors/{id}/ - Delete a specific doctor
+
+GET /patients/ - List all patients
+
+POST /patients/ - Create a new patient
+
+GET /patients/{id}/ - Retrieve a specific patient
+
+PUT /patients/{id}/ - Update a specific patient
+
+DELETE /patients/{id}/ - Delete a specific patient
+
+POST /patients/{id}/discharge/ - Discharge a specific patient
+
+GET /treatments/ - List all treatments
+
+POST /treatments/ - Create a new treatment
+
+GET /treatments/{id}/ - Retrieve a specific treatment
+
+PUT /treatments/{id}/ - Update a specific treatment
+
+DELETE /treatments/{id}/ - Delete a specific treatment
